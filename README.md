@@ -1,22 +1,8 @@
-Here’s the complete **`README.md` file code** for the **Invoice Parser** project, including all the documentation:
-
-```markdown
 # Invoice Parser
 
 ## Description
 
 This project extracts and validates invoice details from PDF files. The extracted data is parsed and validated using `instructor` for field validation, and errors are displayed if any required fields are missing or invalid.
-
-## Requirements
-
-- Python 3.x
-- `argparse`, `pydantic`, `openai`, `instructor`, `python-dotenv`, `pdfminer.six`
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Setup
 
@@ -26,13 +12,20 @@ pip install -r requirements.txt
    git clone https://github.com/yourusername/invoice-parser.git
    ```
 
-2. Install the required packages:
+2. Create a virtual environment:
+  ```bash
+   python -m venv venv
+
+   ```
+
+3. Install the required packages:
 
    ```bash
    pip install -r requirements.txt
+   pip install -e .
    ```
 
-3. Create a `.env` file with your OpenAI API key:
+4. Create a `.env` file with your OpenAI API key:
 
    ```
    OPENAI_API_KEY=your_openai_api_key
