@@ -73,4 +73,5 @@ The script outputs the parsed invoice data as JSON, along with any validation er
 ## License
 
 This project is licensed under the MIT License.
-```
+
+Have a nice day!
