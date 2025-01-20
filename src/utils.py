@@ -23,7 +23,6 @@ def extract_text_from_pdf(file_path):
                 if page.images:
                     images_found = True
 
-                # Extract text from the page
                 text = page.extract_text()
                 if text:
                     extracted_text.append(text)
